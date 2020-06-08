@@ -1,6 +1,5 @@
 #include "prostopadloscian.hh"
 
-#include "prostopadloscian.hh"
 #include "math.h"
 
 Prostopadloscian::Prostopadloscian(drawNS::APIGnuPlot3D *gnuplotAPI, int x, int y, int z, float a, float b, float c)
@@ -102,7 +101,6 @@ bool Prostopadloscian::czyKolizja(Prostopadloscian *obiekt)
     double R2 = obiekt->promien();
 
     double odlegloscOdSrodkow = PunktXY::odleglosc(srodek1, srodek2);
-
     return (odlegloscOdSrodkow < R1 + R2);
 }
 

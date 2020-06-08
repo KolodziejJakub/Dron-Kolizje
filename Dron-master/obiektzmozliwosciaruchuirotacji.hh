@@ -3,7 +3,9 @@
 
 #include "obiekt.hh"
 
-class ObiektZMozliwosciaRuchuIRotacji : public Obiekt
+#include "licznik.hh"
+
+class ObiektZMozliwosciaRuchuIRotacji : public Obiekt, public Licznik<ObiektZMozliwosciaRuchuIRotacji>
 {
 public:
     ObiektZMozliwosciaRuchuIRotacji(drawNS::APIGnuPlot3D *gnuplotAPI);
